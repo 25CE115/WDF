@@ -514,7 +514,7 @@
   function updateExhaust(dt) {
     exhaustParticles.forEach(p => {
       if (p.userData.life <= 0) return;
-      p.userData.life -= dt * 1.1;
+      p.userData.life -= dt * 1.1;  
       p.position.y += p.userData.vy * dt;
       p.position.x += p.userData.vx * dt;
       p.scale.addScalar(dt * 1.4);
