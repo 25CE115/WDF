@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/students" method="post" autocomplete="on">
+        <label for="student-name">student nam: </label>
+        <input id="student-name" name="student_name" autocomplete="name" required>
+        <button type="submit">submit</button>
+    </form>
+     
+    <br>
+    <br>
+
+    <fieldset>
+        <legend>preffered laboratery batch</legend>
+        <label>
+            <input type="checkbox" name="batch" value="A" >Batch A
+
+        </label>
+         <label>
+            <input type="checkbox" name="batch" value="B">Batch B
+        </label>
+         <label>
+            <input type="checkbox" name="batch" value="C">Batch C
+        </label>
+    </fieldset>
+
+    <br>
+    <br>
+    <label for="email">email : </label>
+    <input type="email" name="email" placeholder="enter your email" autocomplete="email" required> <br>
+    <label for="reviewers">reviewers email : </label>
+    <input type="email" name="reviewers" multiple placeholder="enter reviewer emails" >
+
+    <br>
+    <br>
+    <label for="elective">elective : </label>
+    <select name="elective" size="4" required>
+        <option value="" disabled selected>Select an elective</option> 
+        <optgroup label="Machine Learning">
+        <option value="wdf">Web development</option>
+        <option value="ui/ux">UI/UX Design</option>
+        </optgroup>
+        <optgroup label="Ai and Data Science">
+        <option value="ml">Machine learning</option>
+        <option value="nlp" disabled>natural language processing(full course)</option>
+        </optgroup>
+    </select>
+
+    <br>
+    <br>
+
+    
+</body>
+</html>

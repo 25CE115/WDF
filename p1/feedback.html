@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/p2/style1.css">
+</head>
+<body>
+    <header>
+        <h1><b><img src="/images/web logo.jpg" alt="web logo">STUDENTHUB</b></h1>
+       <nav class="nav1">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                 <li><a href="home.html">Learning</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main >
+
+    <section >
+        <h1>Student Feedback</h1>
+        <p>We value your opinion! Help us improve StudentHub by sharing your feedback.</p>
+    </section>
+
+    <section >
+        <form action="#" method="post">
+
+            <!-- Student Name -->
+            <div >
+                <label for="name">Student Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Feedback Category -->
+            <div >
+                <label for="category">Feedback Category</label>
+                <select id="category" name="category" required>
+                    <option value="">-- Select Category --</option>
+                    <option>Website Design</option>
+                    <option>Study Material</option>
+                    <option>Faculty</option>
+                    <option>Technical Issue</option>
+                    <option>Suggestions</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <!-- Rating -->
+            <div>
+                <label>Rate Your Experience</label>
+                <div >
+                    <label><input type="radio" name="rating" value="1"> 1 </label>
+                    <label><input type="radio" name="rating" value="2"> 2 </label>
+                    <label><input type="radio" name="rating" value="3"> 3 </label>
+                    <label><input type="radio" name="rating" value="4"> 4 </label>
+                    <label><input type="radio" name="rating" value="5"> 5 </label>
+                </div>
+            </div>
+
+            <div >
+                <label for="feedback">Your Feedback</label>
+                <textarea id="feedback" name="feedback" rows="6"
+                    placeholder="Write your feedback here..." required></textarea>
+            </div>
+
+         
+            <div >
+                <label>Would you recommend StudentHub?</label>
+                <label><input type="radio" name="recommend" value="Yes"> Yes</label>
+                <label><input type="radio" name="recommend" value="No"> No</label>
+            </div>
+
+          
+            <div >
+                <button type="submit">Submit Feedback</button>
+            </div>
+
+        </form>
+    </section>
+
+</main>
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form class="table-form" action="table.html" method="get">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td><input type="text" id="name" pattern="[a-zA-Z]+" name="name" placeholder="enter your name" required></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td> <input type="text" name="username"  id="username" pattern="[a-zA-Z0-9]{6,12}" placeholder="enter your username" required> </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" placeholder="enter your email" required></td>
+            </tr>
+            <tr>
+                <td>Phone no.</td>
+                <td>:</td>
+                <td><input type="text" name="number" id="number" pattern="[0-9]{10}" placeholder="enter your phone no" required></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td> <input type="password" name="pass" id="pass" placeholder="enter your password" required> </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>:</td>
+                <td>
+                    <label><input type="radio" name="gender" value="male"> male</label>
+                    <label style="margin-left:12px"><input type="radio" name="gender" value="female"> female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Branch</td>
+                <td>:</td>
+                <td><select name="branch" id="branch"> 
+                <option value="">choose branch</option>
+                <option value="CSE">CSE</option>
+                <option value="CE">CE</option>
+                <option value="IT">IT</option>
+                </select></td>
+            </tr>
+             <tr>
+                <td>interest</td>
+                <td>:</td>
+                <td><select name="interest" id="interest"> 
+                <option value="">choose</option>
+                <option value="webdev">web dev</option>
+                <option value="cyber">cyber security</option>
+                <option value="iot">IOT</option>
+                </select></td>
+            </tr>
+             <tr>
+                <td>Address</td>
+                <td>:</td>
+                <td><textarea id="address" name="address" cols="10" rows="5" placeholder="enter your address" required></textarea></td>
+            </tr>
+            <tr>
+                
+                <td>
+                    <input type="checkbox" name="agree" id="agree" required> I agree to the t&c
+                </td>
+            </tr>
+            
+        </table>
+        <input type="submit" value="submit">    
+    </form>
+    
+
+</body>
+</html>

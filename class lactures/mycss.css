@@ -1,0 +1,24 @@
+.demo{
+    color: rgb(169,15, 150);
+    background-color : rgb(200, 228, 161);
+    border: 1px solid black;
+    font-size: 60pt;
+}
+.demo1{
+    color: rgb(169,15, 150);
+    background-color : rgb(200, 228, 161);
+    border: 1px solid black;
+    font-size: 100pt;
+}
+.demo2{
+    color: rgb(169,15, 150);
+    background-color : rgb(200, 228, 161);
+    border: 1px solid black;
+    font-size: 60pt;
+}
+.color-demo{
+    color: antiquewhite;
+    background-color: black;
+    border-color: blue;
+    font-size: 40px;
+}
